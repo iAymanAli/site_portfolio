@@ -66,6 +66,27 @@ function HomePage() {
           See all projects <ArrowIcon />
         </Link>
       </section>
+
+      <section className="about-section home-about-preview">
+        <div className="section-wrap home-about-layout">
+          <div className="home-about-heading">
+            <span className="section-kicker">02 / BEYOND THE CODE</span>
+            <h2>A little about <span>me.</span></h2>
+          </div>
+          <div className="home-about-copy">
+            <p>
+              I&apos;m a Computer Science student at ADA University, a
+              programmer in progress, and an internationally certified
+              Taekwondo black belt. I work with Python, C, React, and SQL —
+              and find inspiration in technology, cars, photography, and a
+              good mystery novel.
+            </p>
+            <Link className="text-link" to="/about">
+              Get to know me <ArrowIcon />
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   )
 }
