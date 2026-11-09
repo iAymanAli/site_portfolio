@@ -16,7 +16,6 @@ function Navbar({ logo, theme, setTheme }) {
     { label: 'Projects', to: '/projects' },
     { label: 'About', to: '/about' },
     { label: 'Accounts', to: '/accounts' },
-    { label: 'Repo', to: '/repo' },
   ]
 
   return (
@@ -41,14 +40,26 @@ function Navbar({ logo, theme, setTheme }) {
         ))}
       </nav>
 
-      <button
-        aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
-        className={styles.themeToggle}
-        onClick={toggleTheme}
-        type="button"
-      >
-        <ThemeIcon isDark={isDark} />
-      </button>
+      <div className={styles.headerActions}>
+        <a
+          aria-label="View project repository"
+          className={styles.repositoryLink}
+          href="https://github.com/your-username/your-repository"
+          rel="noreferrer"
+          target="_blank"
+          title="View project repository"
+        >
+          <img alt="repo-logo" src="https://cdn.simpleicons.org/git" />
+        </a>
+        <button
+          aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+          className={styles.themeToggle}
+          onClick={toggleTheme}
+          type="button"
+        >
+          <ThemeIcon isDark={isDark} />
+        </button>
+      </div>
     </header>
   );
 }

@@ -41,6 +41,38 @@
   content: '';
 }
 
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.repositoryLink {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: transparent;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.repositoryLink:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.repositoryLink img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+:global([data-theme='dark']) .repositoryLink img {
+  filter: invert(1);
+}
+
 .themeToggle {
   display: grid;
   width: 38px;
