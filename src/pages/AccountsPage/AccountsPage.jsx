@@ -1,15 +1,15 @@
 import { accountsData } from '../../data/accountsData.js';
 import styles from './AccountsPage.module.css';
 
-function AccountsPage() {
+function AccountsPage({ theme }) {
   return (
     <section className="content-section section-wrap page-section">
       <div className="section-heading">
         <div>
-          <span className="section-kicker">03 / AROUND THE INTERNET</span>
+          <span className="section-kicker">AROUND THE INTERNET</span>
           <h1>Find me around the web<span className="accent">.</span></h1>
         </div>
-        <p>Browse my profiles, practice, and videos across the web.</p>
+        <p>Browse my profiles and content across the internet.</p>
       </div>
       <div className={styles.accountGrid}>
         {accountsData.map((account) => (
@@ -22,7 +22,10 @@ function AccountsPage() {
             target="_blank"
           >
             <span className={styles.accountIcon} aria-hidden="true">
-              <img alt="" src={account.icon} />
+              <img 
+              alt={`${account.name}-logo`} 
+              src={(account.name === 'GitHub' && theme === 'dark') ? `${account.icon}/white` : account.icon} 
+              />
             </span>
             <span className={styles.accountName}>{account.name}</span>
             <span className={styles.accountDescription}>{account.description}</span>

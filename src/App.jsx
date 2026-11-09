@@ -30,7 +30,7 @@ function App() {
           <Route element={<HomePage />} path="/" />
           <Route element={<ProjectsPage />} path="/projects" />
           <Route element={<AboutPage />} path="/about" />
-          <Route element={<AccountsPage />} path="/accounts" />
+          <Route element={<AccountsPage theme={theme} />} path="/accounts" />
           <Route element={<RepoPage />} path="/repo" />
           <Route element={<Navigate replace to="/" />} path="*" />
         </Routes>
