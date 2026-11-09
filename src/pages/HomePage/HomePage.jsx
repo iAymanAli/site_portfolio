@@ -9,7 +9,7 @@ function HomePage() {
   return (
     <>
       <section className={`${styles.hero} section-wrap`}>
-        <div>
+        <div className={styles.introSection}>
           <div className={styles.eyebrow}><span className={styles.statusDot} /> AVAILABLE FOR WHAT&apos;S NEXT</div>
           <h1>
             A little bit of

@@ -238,6 +238,10 @@
 }
 
 @media (max-width: 760px) {
+  .introSection {
+    order: 2;
+  }
+
   .hero {
     min-height: 0;
     grid-template-columns: 1fr;
@@ -251,6 +255,7 @@
 
   .heroArt {
     min-height: 350px;
+    order: 1;
   }
 
   .homeAboutLayout {
@@ -260,6 +265,10 @@
 }
 
 @media (max-width: 520px) {
+  .introSection {
+    order: 2;
+  }
+
   .hero {
     padding-top: 59px;
   }
@@ -274,5 +283,6 @@
 
   .heroArt {
     min-height: 290px;
+    order: 1;
   }
 }
