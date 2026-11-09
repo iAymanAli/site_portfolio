@@ -136,24 +136,11 @@
 }
 
 .beltMark {
-  display: flex;
-  width: 61px;
-  height: 35px;
-  gap: 4px;
+  display: block;
+  width: 72px;
+  height: auto;
   margin-top: 21px;
-  transform: rotate(-8deg);
-}
-
-.beltMark span:first-child {
-  width: 39px;
-  border-radius: 2px 0 0 2px;
-  background: var(--text);
-}
-
-.beltMark span:last-child {
-  width: 18px;
-  border: 1px solid var(--line);
-  background: var(--surface-strong);
+  object-fit: contain;
 }
 
 .athletePanel h2 {

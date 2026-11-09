@@ -3,6 +3,7 @@ import { ArrowIcon } from '../../components/Icons.jsx';
 import { skills } from '../../data/skills.js';
 import { interests } from '../../data/interests.js';
 import styles from './AboutPage.module.css';
+import kukkiwonLogo from '../../assets/kukkiwon_logo.png';
 
 function AboutPage() {
   return (
@@ -49,10 +50,13 @@ function AboutPage() {
 
         <section className={`${styles.aboutPanel} ${styles.athletePanel}`}>
           <span className="section-kicker">02 / DISCIPLINE IN MOTION</span>
-          <div className={styles.beltMark} aria-hidden="true">
-            <span />
-            <span />
-          </div>
+          <img
+            className={styles.beltMark}
+            src={kukkiwonLogo}
+            alt="Kukkiwon"
+            loading="lazy"
+            decoding="async"
+          />
           <h2>Black belt mindset.</h2>
           <p>
             An internationally certified Taekwondo athlete. Years of practice
