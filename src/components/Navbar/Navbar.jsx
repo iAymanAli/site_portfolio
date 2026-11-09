@@ -3,14 +3,13 @@ import { ThemeIcon } from '../Icons';
 import styles from './Navbar.module.css';
 
 function Navbar({ logo, theme, setTheme }) {
+  const isDark = theme === 'dark'
 
   function toggleTheme() {
     const nextTheme = isDark ? 'light' : 'dark'
     window.localStorage.setItem('portfolio-theme', nextTheme)
     setTheme(nextTheme)
   }
-
-  const isDark = theme === 'dark'
 
   const navigation = [
     { label: 'Home', to: '/' },
