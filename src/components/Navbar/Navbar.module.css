@@ -105,6 +105,7 @@
     width: min(100% - 40px, 560px);
     min-height: 76px;
     flex-wrap: wrap;
+    margin-top: 12px;
   }
 
   .mainNav {
@@ -114,6 +115,7 @@
     gap: 12px;
     overflow-x: auto;
     scrollbar-width: none;
+    margin-top: 12px;
   }
 
   .mainNav::-webkit-scrollbar {
@@ -124,12 +126,6 @@
     flex: 0 0 auto;
     padding-block: 8px 13px;
     font-size: 11px;
-  }
-}
-
-@media (max-width: 760px) {
-  .siteHeader {
-    margin-top: 12px;
   }
 }
 
