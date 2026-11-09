@@ -1,5 +1,5 @@
-import ProjectCard from '../components/ProjectCard';
-import { projects } from '../data/projects.js';
+import ProjectCard from '../../components/ProjectCard/ProjectCard.jsx';
+import { projects } from '../../data/projects.js';
 
 function ProjectsPage() {
   return (

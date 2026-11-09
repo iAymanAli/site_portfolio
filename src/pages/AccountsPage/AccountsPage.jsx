@@ -1,3 +1,5 @@
+import styles from './AccountsPage.module.css';
+
 function AccountsPage() {
   return (
     <section className="content-section section-wrap page-section">
@@ -8,17 +10,17 @@ function AccountsPage() {
         </div>
         <p>Browse my public projects, experiments, and code.</p>
       </div>
-      <div className="account-list">
+      <div className={styles.accountList}>
         <a
-          className="account-row"
+          className={styles.accountRow}
           href="https://github.com/iAymanAli"
           rel="noreferrer"
           target="_blank"
         >
-          <span className="account-number">01</span>
+          <span className={styles.accountNumber}>01</span>
           <h3>GitHub</h3>
           <p>Code, experiments &amp; open source</p>
-          <span className="account-placeholder">iAymanAli ↗</span>
+          <span className={styles.accountPlaceholder}>iAymanAli ↗</span>
         </a>
       </div>
     </section>

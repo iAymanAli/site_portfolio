@@ -1,0 +1,289 @@
+.aboutPage :global(.about-section) {
+  padding-block: 92px 84px;
+}
+
+.aboutPage .aboutLayout {
+  grid-template-columns: 0.7fr 1.3fr;
+  align-items: center;
+  gap: 78px;
+}
+
+.aboutLayout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 70px;
+}
+
+.aboutMark {
+  display: flex;
+  min-height: 310px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.aboutMark :global(.section-kicker) {
+  margin: 0;
+}
+
+.aboutNumber {
+  color: var(--text);
+  font-size: clamp(90px, 14vw, 170px);
+  font-weight: 500;
+  letter-spacing: -0.1em;
+  line-height: 0.8;
+}
+
+.aboutNumber span {
+  color: var(--accent);
+}
+
+.aboutMarkCaption,
+.aboutOverline,
+.athleteCaption,
+.interestIndex {
+  font-family: 'DM Mono', 'SFMono-Regular', Consolas, monospace;
+  letter-spacing: 0.09em;
+}
+
+.aboutMarkCaption {
+  color: var(--muted);
+  font-size: 8px;
+}
+
+.aboutCopy {
+  align-self: center;
+  max-width: 630px;
+}
+
+.aboutOverline {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--accent);
+  font-size: 9px;
+}
+
+.aboutCopy h1 {
+  margin: 0;
+  font-size: clamp(34px, 4vw, 49px);
+  font-weight: 520;
+  letter-spacing: -0.06em;
+  line-height: 1.12;
+}
+
+.aboutCopy h1 span {
+  color: var(--accent);
+}
+
+.aboutCopy > p {
+  max-width: 570px;
+  margin: 22px 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.aboutDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-block: 0 90px;
+  margin-top: 30px;
+}
+
+.aboutPanel {
+  position: relative;
+  min-height: 250px;
+  padding: 27px 28px;
+  border: 1px solid var(--line);
+  background: var(--page);
+}
+
+.aboutPanel h2 {
+  margin: 21px 0 10px;
+  font-size: 21px;
+  font-weight: 550;
+  letter-spacing: -0.045em;
+}
+
+.aboutPanel > p {
+  max-width: 440px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 19px;
+}
+
+.skillChip {
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-family: 'DM Mono', 'SFMono-Regular', Consolas, monospace;
+  font-size: 9px;
+}
+
+.athletePanel {
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 100% 0%, var(--accent-soft), transparent 55%),
+    var(--page);
+}
+
+.beltMark {
+  display: flex;
+  width: 61px;
+  height: 35px;
+  gap: 4px;
+  margin-top: 21px;
+  transform: rotate(-8deg);
+}
+
+.beltMark span:first-child {
+  width: 39px;
+  border-radius: 2px 0 0 2px;
+  background: var(--text);
+}
+
+.beltMark span:last-child {
+  width: 18px;
+  border: 1px solid var(--line);
+  background: var(--surface-strong);
+}
+
+.athletePanel h2 {
+  margin-top: 15px;
+}
+
+.athleteCaption {
+  display: block;
+  margin-top: 15px;
+  color: var(--accent);
+  font-size: 8px;
+}
+
+.interestsSection {
+  padding-block: 0 88px;
+}
+
+.interestsHeading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+  margin-bottom: 25px;
+}
+
+.interestsHeading h2 {
+  margin: 0;
+  font-size: clamp(30px, 3.8vw, 42px);
+  font-weight: 520;
+  letter-spacing: -0.06em;
+}
+
+.interestsHeading > p {
+  max-width: 230px;
+  margin: 0 0 4px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.interestList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.interestItem {
+  display: flex;
+  min-height: 62px;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 15px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--text);
+  font-size: 12px;
+}
+
+.interestIndex {
+  color: var(--accent);
+  font-size: 8px;
+}
+
+.readingNote {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.aboutAmbition {
+  padding-block: 65px 72px;
+  background: var(--surface);
+}
+
+.ambitionInner {
+  text-align: center;
+}
+
+.ambitionInner h2 {
+  margin: 16px 0 12px;
+  font-size: clamp(32px, 4.5vw, 52px);
+  font-weight: 520;
+  letter-spacing: -0.065em;
+  line-height: 1.12;
+}
+
+.ambitionInner h2 span {
+  color: var(--accent);
+}
+
+.ambitionInner > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+@media (max-width: 760px) {
+  .aboutLayout,
+  .aboutPage .aboutLayout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .aboutMark {
+    min-height: 120px;
+  }
+
+  .aboutPage .aboutMark {
+    min-height: 145px;
+  }
+
+  .aboutNumber {
+    font-size: 100px;
+  }
+
+  .aboutDetails {
+    grid-template-columns: 1fr;
+    padding-bottom: 68px;
+  }
+
+  .interestsHeading {
+    align-items: start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .interestList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

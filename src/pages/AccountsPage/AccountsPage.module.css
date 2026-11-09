@@ -1,0 +1,69 @@
+.accountList {
+  border-top: 1px solid var(--line);
+}
+
+.accountRow {
+  display: grid;
+  min-height: 76px;
+  grid-template-columns: 60px 1fr 1.3fr auto;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  color: inherit;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.accountRow:hover h3,
+.accountRow:hover .accountPlaceholder {
+  color: var(--accent);
+}
+
+.accountNumber,
+.accountPlaceholder {
+  font-family: 'DM Mono', 'SFMono-Regular', Consolas, monospace;
+  letter-spacing: 0.09em;
+}
+
+.accountNumber {
+  color: var(--accent);
+  font-size: 9px;
+}
+
+.accountRow h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 560;
+  letter-spacing: -0.03em;
+}
+
+.accountRow p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.accountPlaceholder {
+  color: var(--muted);
+  font-size: 8px;
+}
+
+@media (max-width: 520px) {
+  .accountRow {
+    min-height: 88px;
+    grid-template-columns: 29px 1fr auto;
+    gap: 8px 12px;
+    padding-block: 15px;
+  }
+
+  .accountRow p {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .accountPlaceholder {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    text-align: right;
+  }
+}

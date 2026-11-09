@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { Link, NavLink, Navigate, Route, Routes } from 'react-router';
 
-import HomePage from './pages/HomePage';
-import ProjectsPage from './pages/ProjectsPage';
-import AboutPage from './pages/AboutPage';
-import AccountsPage from './pages/AccountsPage';
-import RepoPage from './pages/RepoPage';
+import HomePage from './pages/HomePage/HomePage.jsx';
+import ProjectsPage from './pages/ProjectsPage/ProjectsPage.jsx';
+import AboutPage from './pages/AboutPage/AboutPage.jsx';
+import AccountsPage from './pages/AccountsPage/AccountsPage.jsx';
+import RepoPage from './pages/RepoPage/RepoPage.jsx';
 import ScrollToTop from './components/ScrollToTop';
 import { ThemeIcon, ArrowIcon } from './components/Icons';
 
