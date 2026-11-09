@@ -8,6 +8,8 @@ import styles from './HomePage.module.css';
 function HomePage() {
   return (
     <>
+      <title>Home</title>
+
       <section className={`${styles.hero} section-wrap`}>
         <div className={styles.introSection}>
           <div className={styles.eyebrow}><span className={styles.statusDot} />READY FOR THE NEXT ADVENTURE</div>

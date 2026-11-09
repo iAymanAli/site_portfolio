@@ -44,7 +44,7 @@ function Navbar({ logo, theme, setTheme }) {
         <a
           aria-label="View project repository"
           className={styles.repositoryLink}
-          href="https://github.com/iAymanAli/my_portfolio.git"
+          href="https://github.com/iAymanAli/site_portfolio.git"
           rel="noreferrer"
           target="_blank"
           title="View project repository"

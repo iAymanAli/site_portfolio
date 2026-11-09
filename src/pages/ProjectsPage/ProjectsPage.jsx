@@ -3,20 +3,24 @@ import { projects } from '../../data/projects.js';
 
 function ProjectsPage() {
   return (
-    <section className="content-section section-wrap page-section">
-      <div className="section-heading">
-        <div>
-          <span className="section-kicker">THINGS I MADE</span>
-          <h1>Idea To Code<span className="accent">.</span></h1>
+    <>
+      <title>Projects</title>
+
+      <section className="content-section section-wrap page-section">
+        <div className="section-heading">
+          <div>
+            <span className="section-kicker">THINGS I MADE</span>
+            <h1>Idea To Code<span className="accent">.</span></h1>
+          </div>
+          <p>Projects and experiments in systems, computer science, and the web.</p>
         </div>
-        <p>Projects and experiments in systems, computer science, and the web.</p>
-      </div>
-      <div className="project-grid">
-        {projects.map((project, index) => (
-          <ProjectCard index={index} key={project.repository} project={project} />
-        ))}
-      </div>
-    </section>
+        <div className="project-grid">
+          {projects.map((project, index) => (
+            <ProjectCard index={index} key={project.repository} project={project} />
+          ))}
+        </div>
+      </section>
+    </>
   )
 }
 
