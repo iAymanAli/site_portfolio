@@ -1,16 +1,7 @@
-import { Link } from 'react-router'
-import { ArrowIcon } from '../components/Icons'
-
-const skills = ['Python', 'C', 'React', 'SQL', 'Vim', 'Git']
-const interests = [
-  'Cars',
-  'Photography',
-  'Videography',
-  'Technology',
-  'Sherlock Holmes',
-  'Agatha Christie',
-  'Innovation',
-]
+import { Link } from 'react-router';
+import { ArrowIcon } from '../components/Icons';
+import { skills } from '../data/skills.js';
+import { interests } from '../data/interests.js';
 
 function AboutPage() {
   return (
