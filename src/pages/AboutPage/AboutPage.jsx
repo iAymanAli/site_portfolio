@@ -11,19 +11,19 @@ function AboutPage() {
       <section className="about-section">
         <div className={`section-wrap ${styles.aboutLayout}`}>
           <div className={styles.aboutMark}>
-            <span className="section-kicker">02 / A LITTLE ABOUT ME</span>
-            <span className={styles.aboutNumber}>A<span>.</span></span>
-            <span className={styles.aboutMarkCaption}>STUDENT · BUILDER · ATHLETE</span>
+            <span className="section-kicker">Who am I ?</span>
+            <span className={styles.aboutNumber}>Me<span>.</span></span>
+            <span className={styles.aboutMarkCaption}>STUDENT · ENGINEER · ATHLETE</span>
           </div>
           <div className={styles.aboutCopy}>
             <span className={styles.aboutOverline}>HELLO, I&apos;M AYMAN ALI</span>
             <h1>
-              Curious by nature.
+              Curious To learn.
               <br />
               <span>Driven to understand.</span>
             </h1>
             <p>
-              I&apos;m a Computer Science student at ADA University, drawn to
+              I&apos;m a Computer Science student at ADA University, fascinated by
               the way technology can turn bold ideas into something real.
               Whether I&apos;m learning a new concept or building a project, I
               love getting beyond the surface and figuring out how things work.
@@ -38,10 +38,10 @@ function AboutPage() {
       <div className={`section-wrap ${styles.aboutDetails}`}>
         <section className={styles.aboutPanel}>
           <span className="section-kicker">01 / WHAT I&apos;M LEARNING</span>
-          <h2>Computer science, hands-on.</h2>
+          <h2>Computer Science</h2>
           <p>
-            Studying Computer Science at ADA University and building my
-            foundations one project at a time.
+            Studying Computer Science at ADA University, building my
+            foundations one project at a time, and cultivating my intellectual capabilities.
           </p>
           <div className={styles.skillList} aria-label="Languages and tools">
             {skills.map((skill) => <span className={styles.skillChip} key={skill}>{skill}</span>)}
@@ -57,13 +57,12 @@ function AboutPage() {
             loading="lazy"
             decoding="async"
           />
-          <h2>Black belt mindset.</h2>
+          <h2>Taekwondo Black belt. Relentless mindset.</h2>
           <p>
             An internationally certified Taekwondo athlete. Years of practice
-            have taught me focus, resilience, and the value of showing up
-            consistently.
+            have taught me focus, resilience, and discipline.
           </p>
-          <span className={styles.athleteCaption}>TAEKWONDO · BLACK BELT</span>
+          <span className={styles.athleteCaption}>TAEKWONDO · BLACK BELT · Kukkiwon</span>
         </section>
       </div>
 
@@ -84,22 +83,21 @@ function AboutPage() {
           ))}
         </div>
         <p className={styles.readingNote}>
-          Always happy to get lost in a Sherlock Holmes mystery or an Agatha
-          Christie novel.
+          Always happy to hear a V10 engine, take a good photo, get lost in a Sherlock Holmes mystery,
+          fix something, or practice a new technique.
         </p>
       </section>
 
       <section className={styles.aboutAmbition}>
         <div className={`section-wrap ${styles.ambitionInner}`}>
-          <span className="section-kicker">STILL LEARNING. ALWAYS BUILDING.</span>
+          <span className="section-kicker">STILL LEARNING. STILL DREAMING.</span>
           <h2>
             One day, I hope to become
             <br />
-            a <span>master programmer.</span>
+            a <span>master software engineer.</span>
           </h2>
           <p>
-            Until then: stay curious, keep practicing, and make something
-            meaningful.
+            It is difficult, but not impossible.
           </p>
         </div>
       </section>

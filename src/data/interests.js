@@ -5,5 +5,6 @@ export const interests = [
   'Technology',
   'Sherlock Holmes',
   'Agatha Christie',
-  'Innovation',
+  'Linux',
+  'Martial Arts',
 ]
