@@ -33,20 +33,9 @@
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.2);
 }
 
-.section-wrap,
-.site-header {
+.section-wrap {
   width: min(1120px, calc(100% - 64px));
   margin-inline: auto;
-}
-
-.site-header {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 88px;
-  border-bottom: 1px solid var(--line);
 }
 
 .brand {
@@ -64,64 +53,6 @@
   width: 31px;
   height: 31px;
   object-fit: contain;
-}
-
-.main-nav {
-  display: flex;
-  align-items: center;
-  gap: clamp(20px, 3vw, 40px);
-}
-
-.nav-link {
-  position: relative;
-  padding-block: 10px;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 180ms ease;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: var(--text);
-}
-
-.nav-link.active::after {
-  position: absolute;
-  right: 0;
-  bottom: 1px;
-  left: 0;
-  height: 2px;
-  background: var(--accent);
-  content: '';
-}
-
-.theme-toggle {
-  display: grid;
-  width: 38px;
-  height: 38px;
-  padding: 9px;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 50%;
-  background: transparent;
-  color: var(--text);
-  cursor: pointer;
-  transition: border-color 180ms ease, background-color 180ms ease;
-}
-
-.theme-toggle:hover {
-  border-color: var(--accent);
-  background: var(--accent-soft);
-}
-
-.theme-toggle svg {
-  width: 18px;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.6;
 }
 
 .content-section {
@@ -250,33 +181,8 @@
 }
 
 @media (max-width: 760px) {
-  .section-wrap,
-  .site-header {
+  .section-wrap {
     width: min(100% - 40px, 560px);
-  }
-
-  .site-header {
-    min-height: 76px;
-    flex-wrap: wrap;
-  }
-
-  .main-nav {
-    order: 2;
-    width: 100%;
-    justify-content: space-between;
-    gap: 12px;
-    overflow-x: auto;
-    scrollbar-width: none;
-  }
-
-  .main-nav::-webkit-scrollbar {
-    display: none;
-  }
-
-  .nav-link {
-    flex: 0 0 auto;
-    padding-block: 8px 13px;
-    font-size: 11px;
   }
 
   .project-grid {
@@ -293,8 +199,7 @@
 }
 
 @media (max-width: 520px) {
-  .section-wrap,
-  .site-header {
+  .section-wrap {
     width: calc(100% - 36px);
   }
 
