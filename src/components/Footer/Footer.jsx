@@ -1,8 +1,10 @@
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 import { ArrowIcon } from "../Icons";
 import styles from "./Footer.module.css";
 
 function Footer({ logo }) {
+  const { pathname } = useLocation();
+
   function backToTop() {
     window.scrollTo(0, 0);
   }
@@ -14,7 +16,7 @@ function Footer({ logo }) {
         <span>Ayman Ali</span>
       </Link>
       <p>Thoughtfully made, one pixel at a time.</p>
-      <Link className={styles.backTop} to="/" onClick={backToTop} >
+      <Link className={styles.backTop} to={pathname} onClick={backToTop} >
         BACK TO TOP <ArrowIcon diagonal />
       </Link>
     </footer>
