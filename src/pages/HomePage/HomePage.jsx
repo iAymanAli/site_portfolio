@@ -10,18 +10,17 @@ function HomePage() {
     <>
       <section className={`${styles.hero} section-wrap`}>
         <div className={styles.introSection}>
-          <div className={styles.eyebrow}><span className={styles.statusDot} /> AVAILABLE FOR WHAT&apos;S NEXT</div>
+          <div className={styles.eyebrow}><span className={styles.statusDot} />READY FOR THE NEXT ADVENTURE</div>
           <h1>
-            A little bit of
+            You can&apos;t put
             <br />
-            <span>curiosity</span> goes
+            a price on
             <br />
-            a long way.
+            <span>success</span>
           </h1>
           <p className={styles.heroDescription}>
-            Hey, I&apos;m Ayman Ali. Welcome to my corner of the internet — a
-            place for the things I make, the things I learn, and what I&apos;m
-            exploring next.
+            Hey, I&apos;m Ayman Ali. Welcome to my corner of the internet. <br/>
+            A place to show the things I make and learn.
           </p>
           <Link className={styles.primaryLink} to="/projects">
             Explore my work <ArrowIcon />
@@ -35,28 +34,26 @@ function HomePage() {
           <img className={styles.heroLogo} src={logo} alt="Ayman Ali logo" />
           <div className={styles.artCaption}>
             <span className={styles.captionLine} />
-            <span>MADE WITH INTENTION</span>
+            <span>DISCIPLINE</span>
           </div>
-          <span className={styles.artIndex}>01 — 05</span>
+          <span className={styles.artIndex}>6174</span>
         </div>
       </section>
 
       <div className={styles.ticker} aria-label="A little about me">
         <div className={styles.tickerTrack}>
-          <span>CURIOUS BY NATURE</span><i />
-          <span>MAKING THINGS FOR THE WEB</span><i />
           <span>ALWAYS LEARNING</span><i />
-          <span>CURIOUS BY NATURE</span><i />
+          <span>ALWAYS IMPROVING</span>
         </div>
       </div>
 
       <section className="content-section section-wrap">
         <div className="section-heading">
           <div>
-            <span className="section-kicker">01 / THE THINGS I MAKE</span>
-            <h2>Selected projects<span className="accent">.</span></h2>
+            <span className="section-kicker">THINGS I MADE</span>
+            <h2>My Artifacts<span className="accent">.</span></h2>
           </div>
-          <p>A few of my biggest projects, from computer fundamentals to the web.</p>
+          <p>Projects that helped me learn and grow as a software engineer.</p>
         </div>
         <div className="project-grid">
           {projects.slice(0, 3).map((project, index) => (
@@ -71,8 +68,8 @@ function HomePage() {
       <section className={`about-section ${styles.homeAboutPreview}`}>
         <div className={`section-wrap ${styles.homeAboutLayout}`}>
           <div className={styles.homeAboutHeading}>
-            <span className="section-kicker">02 / BEYOND THE CODE</span>
-            <h2>A little about <span>me.</span></h2>
+            <span className="section-kicker">BEYOND THE CODE</span>
+            <h2>Who am <span>I ?</span></h2>
           </div>
           <div className={styles.homeAboutCopy}>
             <p>
