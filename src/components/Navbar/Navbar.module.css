@@ -95,8 +95,15 @@
   }
 }
 
+@media (max-width: 760px) {
+  .siteHeader {
+    margin-top: 12px;
+  }
+}
+
 @media (max-width: 520px) {
   .siteHeader {
     width: calc(100% - 36px);
+    margin-top: 12px;
   }
 }
