@@ -10,7 +10,7 @@ export const accountsData = [
     id: 2,
     name: 'LinkedIn',
     description: 'Professional profile & networking',
-    url: 'https://www.linkedin.com/in/ayman-hashem-ali-5a0a532a2/',
+    url: 'https://www.linkedin.com/in/ayman-h-ali-5a0a532a2/',
     icon: 'https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg',
   },
   {

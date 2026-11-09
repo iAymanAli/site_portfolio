@@ -69,7 +69,7 @@ function HomePage() {
         <div className={`section-wrap ${styles.homeAboutLayout}`}>
           <div className={styles.homeAboutHeading}>
             <span className="section-kicker">BEYOND THE CODE</span>
-            <h2>Who am <span>I ?</span></h2>
+            <h2>Who am <span>I</span> ?</h2>
           </div>
           <div className={styles.homeAboutCopy}>
             <p>
