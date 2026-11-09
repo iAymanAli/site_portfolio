@@ -65,4 +65,15 @@ export const projects = [
     mark: '✓',
     visual: 'visual-todo',
   },
+  {
+    name: 'SITE: Project #1',
+    category: 'Logic Gate',
+    description:
+      'Building AND, NOT, OR, and NAND logic gates with physical transistors and breadboards',
+    repository: 'Group 18 | SITE 1101 | Project #1',
+    url: 'https://youtu.be/rQI84usunvg?si=2Ts0TV6Mu-XXBcrD',
+    tag: 'Transistors',
+    mark: '=D-',
+    visual: 'visual-computer',
+  },
 ]
